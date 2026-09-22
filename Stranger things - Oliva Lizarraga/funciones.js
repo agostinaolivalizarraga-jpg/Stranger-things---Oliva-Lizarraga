@@ -145,7 +145,6 @@
             texto = "Funciona como la Mente ágil del equipo. Es la que conecta conceptos absurdos en segundos, traduce información clave y encuentra las fallas en las teorías de los demás gracias a su hiperactividad mental.";
         }
 
-
         document.getElementById("numeroVentana").textContent = numero;
         document.getElementById("nombreVentana").textContent = nombre;
         document.getElementById("textoVentana").textContent = texto;
@@ -186,7 +185,6 @@ function filtrarImagenes(categoria) {
     });
 }
 
-
 function abrirImagen(indice) {
 
     indiceActual = indice;
@@ -195,7 +193,6 @@ function abrirImagen(indice) {
 
     document.getElementById("visor").style.display = "flex";
 }
-
 
 function mostrarImagen() {
 
@@ -264,4 +261,3 @@ function cambiarImagen(direccion) {
     mensaje.style.display = "block";
 
         };
-

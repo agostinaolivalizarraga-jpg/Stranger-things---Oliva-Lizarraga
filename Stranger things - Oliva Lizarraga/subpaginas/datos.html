@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stranger Things</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="encabezado">
+
+        <div class="logo">
+            STRANGER<br>
+            <span>THINGS</span>
+        </div> 
+
+        <nav class="navegacion">
+            <a href="../index.html">INICIO</a>
+            <a href="../subpaginas/informacion.html">INFORMACIÓN</a>
+            <a href="../subpaginas/datos.html">DATOS</a>
+            <a href="../subpaginas/episodios.html">EPISODIOS</a>
+            <a href="../subpaginas/personajes.html">PERSONAJES</a>
+            <a href="../subpaginas/galeria.html">GALERÍA</a>
+            <a href="../subpaginas/trivia.html">TRIVIA</a>
+            <a href="../subpaginas/registro.html" class="boton_registro">REGISTRARSE</a>
+        </nav>
+
+    </header>
+
+     <main>
+
+        <section class="titulo_datos">
+
+            <p>HAWKINS ARCHIVE • FILE 002</p>
+
+            <h1>
+                DATOS<br>
+                <span>INTERESANTES</span>
+            </h1>
+
+            <p class="texto_intro">
+                Curiosidades y secretos
+                que se esconden detrás de Stranger Things.
+            </p>
+
+        </section>
+
+        <!-- DATOS -->
+
+        <section class="seccion_datos">
+
+
+            <div class="encabezado_datos">
+
+                <div>
+                    <p>CLASSIFIED INFORMATION</p>
+
+                    <h2>
+                        ARCHIVOS<br>
+                        ENCONTRADOS
+                    </h2>
+                </div>
+
+                <p class="texto_archivo">
+                    Hacé clic en cada archivo<br>
+                    para descubrir su información.
+                </p>
+
+            </div>
+
+            <div class="tarjetas_datos">
+
+                <!-- TARJETA 1 -->
+
+                <div class="dato_tarjeta">
+
+                    <div class="numero_dato">
+                        01
+                    </div>
+
+                    <h3>
+                        CONSPIRACIÓN 🔮
+                    </h3>
+                    <br>
+
+                    <button onclick="mostrarDato(this)">
+                        DESCUBRIR
+                    </button>
+
+                    <div class="info_oculta">
+
+                        <p>
+                           Esta serie se iba a titular originalmente Montauk, 
+                           debido al nombre de la conspiración del 'Proyecto 
+                           Montauk', según el cual el gobierno organizaba 
+                           diversos experimentos exóticos sobre viajes en el 
+                           tiempo y guerra psicológica.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- TARJETA 2 -->
+
+                <div class="dato_tarjeta">
+
+                    <div class="numero_dato">
+                        02
+                    </div>
+
+                    <h3>
+                        CORTE DE PELO 💇‍♀️
+                    </h3>
+                    <br>
+
+                    <button onclick="mostrarDato(this)">
+                        DESCUBRIR
+                    </button>
+
+                    <div class="info_oculta">
+
+                        <p>
+                            Millie Bobby Brown tuvo que afeitarse 
+                            la cabeza para interpretar al personaje. Como se 
+                            puede suponer, era algo que ninguna niña de 11 años 
+                            querría hacer así que los directores le enseñaron 
+                            el look que llevaba Charlize Theron en Mad Max: Furia 
+                            en la carretera. Después de eso, Millie aceptó raparse el pelo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- TARJETA 3 -->
+
+                <div class="dato_tarjeta">
+
+                    <div class="numero_dato">
+                        03
+                    </div>
+
+                    <h3>
+                        TIPOGRAFÍA DE LOS TÍTULOS ✒️
+                    </h3>
+                    <br>
+
+                    <button onclick="mostrarDato(this)">
+                        DESCUBRIR
+                    </button>
+
+                    <div class="info_oculta">
+
+                        <p>
+                            La tipografía que se utiliza para los títulos de los episodios y
+                            los créditos es la misma que se usaba en los libros 
+                            de Dungeons & Dragons.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- TARJETA 4 -->
+
+                <div class="dato_tarjeta">
+
+                    <div class="numero_dato">
+                        04
+                    </div>
+
+                    <h3>
+                        LAS BICICLETAS DE LOS NIÑOS 🚲
+                    </h3>
+                    <br>
+
+                    <button onclick="mostrarDato(this)">
+                        DESCUBRIR
+                    </button>
+
+                    <div class="info_oculta">
+
+                        <p>
+                            Las biciletas que utilizan los niños tuvieron que 
+                            ser adaptadas para que fueran iguales a las que 
+                            había en 1983. Fue una tarea difícil ya que las piezas 
+                            que necesitaban no se construían desde hace 10 años.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- TARJETA 5 -->
+
+                <div class="dato_tarjeta">
+
+                    <div class="numero_dato">
+                        05
+                    </div>
+
+                    <h3>
+                        SEÑAL DE MALA SUERTE 🐈‍⬛
+                    </h3>
+                    <br>
+
+                    <button onclick="mostrarDato(this)">
+                        DESCUBRIR
+                    </button>
+
+                    <div class="info_oculta">
+
+                        <p>
+                            El cobertizo donde desaparece Will tiene una herradura 
+                            puesta del revés, que significa mala suerte.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- TARJETA 6 -->
+
+                <div class="dato_tarjeta">
+
+                    <div class="numero_dato">
+                        06
+                    </div>
+
+                    <h3>
+                        STARCOURT MALL 🏢
+                    </h3>
+                    <br>
+
+                    <button onclick="mostrarDato(this)">
+                        DESCUBRIR
+                    </button>
+
+                    <div class="info_oculta">
+
+                        <p>
+                            Gran parte de la tercera temporada ocurre en un 
+                            centro comercial real. La serie compró tan solo un trozo
+                            y lo usó para rodar.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DATO DESTACADO -->
+
+        <section class="dato_destacado">
+
+            <p>INFORMACIÓN SECRETA</p>
+
+            <h2>
+                ¿SABÍAS QUE...?
+            </h2>
+
+            <p id="datoRandom">
+                Hacé clic en el botón para descubrir
+                un dato secreto.
+            </p>
+
+            <button class="boton_secreto" onclick="datoAleatorio()">
+                DESCUBRIR DATO
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+     
+    <footer class="footer">
+
+    <div class="footer_contenido">
+
+        <div class="footer_mapa">
+            <p class="footer_titulo">MAPA DEL SITIO</p>
+
+            <a href="../index.html">Inicio</a>
+            <a href="../subpaginas/informacion.html">Información</a>
+            <a href="../subpaginas/datos.html">Datos</a>
+            <a href="../subpaginas/episodios.html">Episodios</a>
+            <a href="../subpaginas/personajes.html">Personajes</a>
+            <a href="../subpaginas/galeria.html">Galería</a>
+            <a href="../subpaginas/trivia.html">Trivia</a>
+
+        </div>
+
+        <div class="footer_info">
+
+            <p class="footer_titulo">HAWKINS DATABASE</p>
+
+            <p>
+                Un archivo digital dedicado al universo de
+                Stranger Things.
+            </p>
+
+        </div>
+
+        <div class="footer_redes">
+
+            <p class="footer_titulo">CONECTATE</p>
+
+            <a href="https://www.instagram.com/strangerthingstv?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" class="red_social">
+                <span>◎</span>
+                Instagram
+            </a>
+
+            <a href="#" class="red_social">
+                <span>▶</span>
+                Netflix
+            </a>
+
+        </div>
+
+        <div class="footer_privacidad">
+
+            <p class="footer_titulo">PRIVACIDAD</p>
+
+            <a href="#">Centro de privacidad</a>
+            <a href="#">Términos de uso</a>
+            <a href="#">Cookies</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer_linea"></div>
+
+    <div class="footer_bottom">
+
+        <p>© 2026 HAWKINS DATABASE</p>
+
+    </div>
+
+</footer>
+
+<script src="../funciones.js"></script>
+
+</body>
+
+</html>

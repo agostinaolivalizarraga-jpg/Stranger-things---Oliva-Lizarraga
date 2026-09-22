@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stranger Things</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="encabezado">
+
+        <div class="logo">
+            STRANGER<br>
+            <span>THINGS</span>
+        </div> 
+
+        <nav class="navegacion">
+             <a href="../index.html">INICIO</a>
+            <a href="../subpaginas/informacion.html">INFORMACIÓN</a>
+            <a href="../subpaginas/datos.html">DATOS</a>
+            <a href="../subpaginas/episodios.html">EPISODIOS</a>
+            <a href="../subpaginas/personajes.html">PERSONAJES</a>
+            <a href="../subpaginas/galeria.html">GALERÍA</a>
+            <a href="../subpaginas/trivia.html">TRIVIA</a>
+            <a href="../subpaginas/registro.html" class="boton_registro">REGISTRARSE</a>
+        </nav>
+
+    </header>
+
+     <!-- TITULO -->
+
+    <main>
+
+        <section class="titulo_informacion">
+
+            <p>HAWKINS ARCHIVE • FILE 001</p>
+
+            <h1>
+                ARCHIVO<br>
+                <span>HAWKINS</span>
+            </h1>
+
+            <p class="texto_intro">
+                Información clasificada sobre la serie,
+                sus personajes y el universo que se esconde
+                detrás del Upside Down.
+            </p>
+
+        </section>
+
+        <!-- FICHA DE LA SERIE -->
+
+        <section class="ficha">
+
+            <div class="imagen_ficha">
+                <img src="../imagenes/inforimg.jpg" alt="">
+            </div>
+
+            <div class="datos_ficha">
+
+                <p class="numero">FILE 001</p>
+
+                <h2>STRANGER THINGS</h2>
+
+                <div class="linea_roja"></div>
+
+                <div class="dato">
+                    <span>NOMBRE</span>
+                    <p>Stranger Things</p>
+                </div>
+
+                <div class="dato">
+                    <span>AÑOS DE EMISIÓN</span>
+                    <p>2016 — 2025</p>
+                </div>
+
+                <div class="dato">
+                    <span>PAÍS</span>
+                    <p>Estados Unidos</p>
+                </div>
+
+                <div class="dato">
+                    <span>GÉNEROS</span>
+                    <p>Ciencia ficción · Terror · Drama · Misterio</p>
+                </div>
+
+                <div class="dato">
+                    <span>CREADORES</span>
+                    <p>Matt Duffer y Ross Duffer</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- BOTONES -->
+
+        <section class="explorador">
+
+            <div class="titulo_seccion">
+                <p>EXPEDIENTE CONFIDENCIAL</p>
+                <h2>DESCUBRÍ LA HISTORIA</h2>
+            </div>
+
+            <div class="botones_info">
+
+                <button onclick="mostrarInfo('sinopsis')">
+                    SINOPSIS
+                </button>
+
+                <button onclick="mostrarInfo('produccion')">
+                    PRODUCCIÓN
+                </button>
+
+                <button onclick="mostrarInfo('elenco')">
+                    ELENCO
+                </button>
+
+            </div>
+
+            <!-- SINOPSIS -->
+
+            <div id="sinopsis" class="contenido_info">
+
+                <p class="numero">FILE 002 / SINOPSIS</p>
+
+                <h3>EL MISTERIO COMIENZA EN HAWKINS</h3>
+
+                <p>
+                    En 1983, la desaparición de un niño llamado
+                    Will Byers cambia para siempre la vida de sus
+                    amigos y de toda la comunidad de Hawkins.
+                </p>
+
+                <p>
+                    Mientras sus amigos lo buscan, conocen a una
+                    misteriosa niña con poderes sobrenaturales
+                    conocida como Eleven. Al mismo tiempo,
+                    comienzan a aparecer señales de una dimensión
+                    paralela conocida como el Upside Down.
+                </p>
+
+                <p>
+                    A partir de ese momento, los habitantes de
+                    Hawkins deberán enfrentarse a criaturas,
+                    experimentos secretos y fenómenos que ponen
+                    en peligro a toda la ciudad.
+                </p>
+
+            </div>
+
+            <!-- PRODUCCION -->
+
+            <div id="produccion" class="contenido_info" style="display: none;">
+
+                <p class="numero">FILE 003 / PRODUCCIÓN</p>
+
+                <h3>DETRÁS DE STRANGER THINGS</h3>
+
+                <p>
+                    Stranger Things fue creada por los hermanos
+                    Matt Duffer y Ross Duffer. La serie combina
+                    elementos de ciencia ficción, terror, aventura
+                    y misterio con una fuerte inspiración en la
+                    cultura popular de los años 80.
+                </p>
+
+                <p>
+                    Su estética está influenciada por películas,
+                    videojuegos, música y literatura de la época.
+                    Las bicicletas, los walkie-talkies, los
+                    videoclubes y las luces de Navidad forman parte
+                    de la identidad visual de la historia.
+                </p>
+
+            </div>
+
+            <!-- ELENCO -->
+
+            <div id="elenco" class="contenido_info" style="display: none;">
+
+                <p class="numero">FILE 004 / ELENCO</p>
+
+                <h3>PERSONAJES PRINCIPALES</h3>
+
+                <p>
+                    <strong>Millie Bobby Brown</strong> — Eleven
+                </p>
+                <p>
+                    <strong>Noah Schnapp</strong> — Will Byers
+                </p>
+                <p>
+                    <strong>Finn Wolfhard</strong> — Mike Wheeler
+                </p>
+                <p>
+                    <strong>Gaten Matarazzo</strong> — Dustin Henderson
+                </p>
+                <p>
+                    <strong>Caleb McLaughlin</strong> — Lucas Sinclair
+                </p>
+                <p>
+                    <strong>Sadie Sink</strong> — Max Mayfield
+                </p>
+                <p>
+                    <strong>Winona Ryder</strong> — Joyce Byers
+                </p>
+                <p>
+                    <strong>David Harbour</strong> — Jim Hopper
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="frase">
+
+            <div class="linea_frase"></div>
+
+            <p> "EL UPSIDE DOWN ESTÁ MÁS CERCA DE LO QUE CREES."</p>
+
+            <div class="linea_frase"></div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+    <div class="footer_contenido">
+
+        <div class="footer_mapa">
+            <p class="footer_titulo">MAPA DEL SITIO</p>
+
+            <a href="../index.html">Inicio</a>
+            <a href="../subpaginas/informacion.html">Información</a>
+            <a href="../subpaginas/datos.html">Datos</a>
+            <a href="../subpaginas/episodios.html">Episodios</a>
+            <a href="../subpaginas/personajes.html">Personajes</a>
+            <a href="../subpaginas/galeria.html">Galería</a>
+            <a href="../subpaginas/trivia.html">Trivia</a>
+
+        </div>
+
+        <div class="footer_info">
+
+            <p class="footer_titulo">HAWKINS DATABASE</p>
+
+            <p>
+                Un archivo digital dedicado al universo de
+                Stranger Things.
+            </p>
+
+        </div>
+
+        <div class="footer_redes">
+
+            <p class="footer_titulo">CONECTATE</p>
+
+            <a href="https://www.instagram.com/strangerthingstv?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" class="red_social">
+                <span>◎</span>
+                Instagram
+            </a>
+
+            <a href="#" class="red_social">
+                <span>▶</span>
+                Netflix
+            </a>
+
+        </div>
+
+        <div class="footer_privacidad">
+
+            <p class="footer_titulo">PRIVACIDAD</p>
+
+            <a href="#">Centro de privacidad</a>
+            <a href="#">Términos de uso</a>
+            <a href="#">Cookies</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer_linea"></div>
+
+    <div class="footer_bottom">
+
+        <p>© 2026 HAWKINS DATABASE</p>
+
+    </div>
+
+    </footer>
+
+<script src="../funciones.js"></script>
+
+</body>
+
+</html>

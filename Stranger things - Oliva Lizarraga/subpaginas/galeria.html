@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stranger Things</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="encabezado">
+
+        <div class="logo">
+            STRANGER<br>
+            <span>THINGS</span>
+        </div> 
+
+        <nav class="navegacion">
+
+            <a href="../index.html">INICIO</a>
+            <a href="../subpaginas/informacion.html">INFORMACIÓN</a>
+            <a href="../subpaginas/datos.html">DATOS</a>
+            <a href="../subpaginas/episodios.html">EPISODIOS</a>
+            <a href="../subpaginas/personajes.html">PERSONAJES</a>
+            <a href="../subpaginas/galeria.html">GALERÍA</a>
+            <a href="../subpaginas/trivia.html">TRIVIA</a>
+            <a href="../subpaginas/registro.html" class="boton_registro">REGISTRARSE</a>
+
+        </nav>
+
+    </header>
+
+    <!-- TITULO -->
+
+    <main>
+
+        <section class="titulo_galeria">
+
+            <p>VISUAL ARCHIVE • FILE 005</p>
+
+            <h1>GALERÍA</h1>
+
+            <span>
+                ARCHIVOS VISUALES RECUPERADOS DE HAWKINS
+            </span>
+
+        </section>
+
+        <!-- FILTROS -->
+
+        <section class="filtros">
+
+            <button onclick="filtrarImagenes('todos')" class="filtro activo">
+                TODO
+            </button>
+
+            <button onclick="filtrarImagenes('personajes')" class="filtro">
+                PERSONAJES
+            </button>
+
+            <button onclick="filtrarImagenes('hawkins')" class="filtro">
+                HAWKINS
+            </button>
+
+            <button onclick="filtrarImagenes('mundo')" class="filtro">
+                MUNDO DEL REVÉS
+            </button>
+
+            <button onclick="filtrarImagenes('detras')" class="filtro">
+                DETRÁS DE ESCENA
+            </button>
+
+        </section>
+
+        <section class="galeria">
+
+            <!-- IMAGEN 1 -->
+
+            <div class="imagen_galeria personajes"
+                onclick="abrirImagen(0)">
+
+                <img src="../imagenes/gal.cast.jpg" alt="Elenco">
+
+                <div class="info_imagen">
+
+                    <span>ARCHIVO 01</span>
+
+                    <h3>CAST</h3>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGEN 2 -->
+
+            <div class="imagen_galeria hawkins"
+                onclick="abrirImagen(1)">
+
+                <img src="../imagenes/gal.hawkins.jpg" alt="Hawkins">
+
+                <div class="info_imagen">
+
+                    <span>ARCHIVO 02</span>
+
+                    <h3>HAWKINS</h3>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGEN 3 -->
+
+            <div class="imagen_galeria mundo"
+                onclick="abrirImagen(2)">
+
+                <img src="../imagenes/gal.upsidedown.jpg" alt="Upside down">
+
+                <div class="info_imagen">
+
+                    <span>ARCHIVO 03</span>
+
+                    <h3>THE UPSIDE DOWN</h3>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGEN 4 -->
+
+            <div class="imagen_galeria personajes"
+                onclick="abrirImagen(3)">
+
+                <img src="../imagenes/gal.graduacion.jpg" alt="Personajes">
+
+                <div class="info_imagen">
+
+                    <span>ARCHIVO 04</span>
+
+                    <h3>GRADUACIÓN</h3>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGEN 5 -->
+
+             <div class="imagen_galeria mundo"
+                onclick="abrirImagen(4)">
+
+                <img src="../imagenes/gal.vecna.jpg" alt="Vecna">
+
+                <div class="info_imagen">
+
+                    <span>ARCHIVO 05</span>
+
+                    <h3>VECNA</h3>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGEN 6 -->
+
+                <div class="imagen_galeria hawkins"
+                    onclick="abrirImagen(5)">
+
+                <img src="../imagenes/gal.lab.jpg" alt="Hawkins">
+
+                <div class="info_imagen">
+
+                    <span>ARCHIVO 06</span>
+
+                    <h3>LABORATORIO DE HAWKINS</h3>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGEN 7 -->
+
+            <div class="imagen_galeria detras"
+                onclick="abrirImagen(6)">
+
+                <img src="../imagenes/gal.produccion.jpg" alt="Detrás de escena">
+
+                <div class="info_imagen">
+
+                    <span>ARCHIVO 07</span>
+
+                    <h3>DETRÁS DE ESCENAS</h3>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGEN 8 -->
+
+            <div class="imagen_galeria detras"
+                onclick="abrirImagen(7)">
+
+                <img src="../imagenes/gal.entrevista.jpg" alt="Stranger Things">
+
+                <div class="info_imagen">
+
+                    <span>ARCHIVO 08</span>
+
+                    <h3>ENTREVISTA</h3>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGEN 9 -->
+
+            <div class="imagen_galeria detras"
+                onclick="abrirImagen(8)">
+
+                <img src="../imagenes/gal.produ.jpg" alt="Producción">
+
+                <div class="info_imagen">
+
+                    <span>ARCHIVO 09</span>
+
+                    <h3>ON SET</h3>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGEN 10 -->
+
+            <div class="imagen_galeria hawkins"
+                onclick="abrirImagen(9)">
+
+                <img src="../imagenes/gal.escuela.jpg" alt="Hawkins">
+
+                <div class="info_imagen">
+
+                    <span>ARCHIVO 10</span>
+
+                    <h3>ESCUELA</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- VISOR DE IMAGEN -->
+
+        <div id="visor" class="visor">
+
+            <button class="cerrar" onclick="cerrarImagen()">
+                ×
+            </button>
+
+            <button class="anterior" onclick="cambiarImagen(-1)">
+                ‹
+            </button>
+
+            <div class="contenido_visor">
+
+                <img id="imagenGrande" src="" alt="">
+
+                <div class="datos_visor">
+
+                    <span id="numeroImagen"></span>
+
+                    <h2 id="tituloImagen"></h2>
+
+                    <p id="categoriaImagen"></p>
+
+                </div>
+
+            </div>
+
+            <button class="siguiente" onclick="cambiarImagen(1)">
+                ›
+            </button>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+ <footer class="footer">
+
+    <div class="footer_contenido">
+
+        <div class="footer_mapa">
+            <p class="footer_titulo">MAPA DEL SITIO</p>
+
+            <a href="../index.html">Inicio</a>
+            <a href="../subpaginas/informacion.html">Información</a>
+            <a href="../subpaginas/datos.html">Datos</a>
+            <a href="../subpaginas/episodios.html">Episodios</a>
+            <a href="../subpaginas/personajes.html">Personajes</a>
+            <a href="../subpaginas/galeria.html">Galería</a>
+            <a href="../subpaginas/trivia.html">Trivia</a>
+
+        </div>
+
+        <div class="footer_info">
+
+            <p class="footer_titulo">HAWKINS DATABASE</p>
+
+            <p>
+                Un archivo digital dedicado al universo de
+                Stranger Things.
+            </p>
+
+        </div>
+
+        <div class="footer_redes">
+
+            <p class="footer_titulo">CONECTATE</p>
+
+            <a href="https://www.instagram.com/strangerthingstv?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" class="red_social">
+                <span>◎</span>
+                Instagram
+            </a>
+
+            <a href="#" class="red_social">
+                <span>▶</span>
+                Netflix
+            </a>
+
+        </div>
+
+        <div class="footer_privacidad">
+
+            <p class="footer_titulo">PRIVACIDAD</p>
+
+            <a href="#">Centro de privacidad</a>
+            <a href="#">Términos de uso</a>
+            <a href="#">Cookies</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer_linea"></div>
+
+    <div class="footer_bottom">
+
+        <p>© 2026 HAWKINS DATABASE</p>
+
+    </div>
+
+</footer>
+
+    <script src="../funciones.js"></script>
+
+</body>
+
+</html>

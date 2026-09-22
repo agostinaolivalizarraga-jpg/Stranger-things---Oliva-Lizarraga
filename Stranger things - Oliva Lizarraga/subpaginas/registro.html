@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stranger Things</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header class="encabezado">
+
+        <div class="logo">
+            STRANGER<br>
+            <span>THINGS</span>
+        </div> 
+
+        <nav class="navegacion">
+            <a href="../index.html">INICIO</a>
+            <a href="../subpaginas/informacion.html">INFORMACIÓN</a>
+            <a href="../subpaginas/datos.html">DATOS</a>
+            <a href="../subpaginas/episodios.html">EPISODIOS</a>
+            <a href="../subpaginas/personajes.html">PERSONAJES</a>
+            <a href="../subpaginas/galeria.html">GALERÍA</a>
+            <a href="../subpaginas/trivia.html">TRIVIA</a>
+            <a href="../subpaginas/registro.html" class="boton_registro">REGISTRARSE</a>
+        </nav>
+
+    </header>
+
+    <!-- REGISTRO -->
+
+    <main class="pagina_registro">
+
+        <section class="registro_contenedor">
+
+            <div class="registro_texto">
+
+                <p class="codigo">HAWKINS DATABASE • FILE 006</p>
+
+                <h1>
+                    REGISTRARSE
+                </h1>
+
+                <p class="descripcion_registro">
+                    Creá tu archivo y formá parte de la comunidad
+                    de Hawkins.
+                </p>
+
+            </div>
+
+
+            <!-- FORMULARIO -->
+
+            <form id="formularioRegistro" class="formulario">
+
+                <div class="fila_formulario">
+
+                    <div class="campo">
+
+                        <label for="nombre">
+                            NOMBRE
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            placeholder="Ingresá tu nombre"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="apellido">
+                            APELLIDO
+                        </label>
+
+                        <input
+                            type="text"
+                            id="apellido"
+                            placeholder="Ingresá tu apellido"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="usuario">
+                        NOMBRE DE USUARIO
+                    </label>
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        placeholder="Elegí un nombre de usuario"
+                        required
+                    >
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="email">
+                        EMAIL
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="ejemplo@email.com"
+                        required
+                    >
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="password">
+                        CONTRASEÑA
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Ingresá una contraseña"
+                        required
+                    >
+
+                </div>
+
+                <div class="aceptar">
+
+                    <input
+                        type="checkbox"
+                        id="terminos"
+                        required
+                    >
+
+                    <label for="terminos">
+                        Acepto formar parte del archivo de Hawkins.
+                    </label>
+
+                </div>
+
+                <button type="submit" class="boton_enviar">
+                    CREAR ARCHIVO
+                </button>
+
+            </form>
+
+            <!-- MENSAJE -->
+
+            <div id="mensajeRegistro" class="mensaje_registro">
+
+                <span>✓</span>
+
+                <h2>ARCHIVO CREADO</h2>
+
+                <p>
+                    Bienvenido a Hawkins.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+    <div class="footer_contenido">
+
+        <div class="footer_mapa">
+            <p class="footer_titulo">MAPA DEL SITIO</p>
+
+            <a href="../index.html">Inicio</a>
+            <a href="../subpaginas/informacion.html">Información</a>
+            <a href="../subpaginas/datos.html">Datos</a>
+            <a href="../subpaginas/episodios.html">Episodios</a>
+            <a href="../subpaginas/personajes.html">Personajes</a>
+            <a href="../subpaginas/galeria.html">Galería</a>
+            <a href="../subpaginas/trivia.html">Trivia</a>
+
+        </div>
+
+        <div class="footer_info">
+
+            <p class="footer_titulo">HAWKINS DATABASE</p>
+
+            <p>
+                Un archivo digital dedicado al universo de
+                Stranger Things.
+            </p>
+
+        </div>
+
+        <div class="footer_redes">
+
+            <p class="footer_titulo">CONECTATE</p>
+
+            <a href="https://www.instagram.com/strangerthingstv?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" class="red_social">
+                <span>◎</span>
+                Instagram
+            </a>
+
+            <a href="#" class="red_social">
+                <span>▶</span>
+                Netflix
+            </a>
+
+        </div>
+
+        <div class="footer_privacidad">
+
+            <p class="footer_titulo">PRIVACIDAD</p>
+
+            <a href="#">Centro de privacidad</a>
+            <a href="#">Términos de uso</a>
+            <a href="#">Cookies</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer_linea"></div>
+
+    <div class="footer_bottom">
+
+        <p>© 2026 HAWKINS DATABASE</p>
+
+    </div>
+
+    </footer>
+
+    <script src="../funciones.js"></script>
+
+</body>
+
+</html>
